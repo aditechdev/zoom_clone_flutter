@@ -15,15 +15,15 @@ class MyApp extends StatelessWidget {
       title: "Zoom Clone Flutter",
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(
-        useMaterial3: true,
-      ).copyWith(
+              // useMaterial3: true,
+              )
+          .copyWith(
         scaffoldBackgroundColor: backgroundColor,
       ),
       routes: {
         '/login': (context) => const LoginScreen(),
       },
       initialRoute: '/login',
-      // home: const Home(),
     );
   }
 }

@@ -1,4 +1,3 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:color_log/color_log.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -9,6 +8,8 @@ import 'package:zoom_clone_flutter/utils/utils.dart';
 class AuthMethods {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+  Stream<User?> get authchanges => _auth.authStateChanges();
 
   Future<bool> signInWithGoogle(BuildContext context) async {
     bool res = false;

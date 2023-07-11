@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>577514455805-reo0rifp33dpr3lr7b3p1stbace5qvh8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.577514455805-reo0rifp33dpr3lr7b3p1stbace5qvh8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDxKvPJ1TiVPHaWdsJp4ebdCypiyBN7zAE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>577514455805</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.zoomCloneFlutter</string>
+	<key>PROJECT_ID</key>
+	<string>zoom-clone-flutter-9c112</string>
+	<key>STORAGE_BUCKET</key>
+	<string>zoom-clone-flutter-9c112.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:577514455805:ios:6350f950b13ff402727494</string>
+</dict>
+</plist>

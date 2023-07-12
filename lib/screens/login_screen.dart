@@ -36,12 +36,18 @@ class _LoginScreenState extends State<LoginScreen> {
         CustomButtonWidget(
           btnText: "Google Sign In",
           onTap: () async {
-            bool res = await _authMethods.signInWithGoogle(context);
-            log("==============> $res");
+            _authMethods.signInWithGoogle(context).then((res) {
+              log("==============> $res");
+              if (res) {
+                Navigator.pushNamed(context, "/home");
+              }
+            });
+            // bool res = await _authMethods.signInWithGoogle(context);
+            // log("==============> $res");
 
-            if (res) {
-              Navigator.pushNamed(context, "/home");
-            }
+            // if (res) {
+            //   Navigator.pushNamed(context, "/home");
+            // }
           },
         )
       ],

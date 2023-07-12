@@ -40,6 +40,8 @@ dependencies:
   firebase_auth: ^4.6.3
   google_sign_in: ^6.1.4
   color_log: ^0.0.6
+  # jitsi_meet_v1: ^5.0.0
+  omni_jitsi_meet: ^1.0.14
 
 dev_dependencies:
   flutter_test:

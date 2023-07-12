@@ -33,12 +33,12 @@ class HomeMeatingButtonWidget extends StatelessWidget {
               size: 30,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Text(
             text!,
-            style: TextStyle(color: Colors.grey),
+            style: const TextStyle(color: Colors.grey),
           )
         ],
       ),

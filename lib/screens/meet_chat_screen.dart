@@ -1,9 +1,23 @@
+import 'dart:math';
+
 import 'package:color_log/color_log.dart';
 import 'package:flutter/material.dart';
+import 'package:zoom_clone_flutter/resources/jitsi_meet_method.dart';
 import 'package:zoom_clone_flutter/widget/home_meeting_button.dart';
 
 class MeetAndChatScreen extends StatelessWidget {
-  const MeetAndChatScreen({super.key});
+  MeetAndChatScreen({super.key});
+
+  final JitsiMeetMethods _jitsiMeetMethods = JitsiMeetMethods();
+
+  creatNewMeeting() async {
+    var random = Random();
+    String roomName = (random.nextInt(1000000) + 1000000).toString();
+    _jitsiMeetMethods.creatMeeting(
+        roomName: roomName,
+        isAudioMuted: true,
+        isVideoMuted: true);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -13,9 +27,7 @@ class MeetAndChatScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             HomeMeatingButtonWidget(
-              onTap: () {
-                clog.checkSuccess(true, "It is working");
-              },
+              onTap: creatNewMeeting,
               text: "New Meeting",
               icon: Icons.videocam,
             ),
